@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Examples IA Plataform Next.js
 
-## Getting Started
+![Conversation](https://cdn.discordapp.com/attachments/1083115321935798314/1189222082744156210/image.png?ex=65f9a95f&is=65e7345f&hm=e12bbf961dd8de187fa48d6dac04043674644f77dee4c10f64de474346e6e302&)
 
-First, run the development server:
+![Image](https://cdn.discordapp.com/attachments/1083115321935798314/1189227180878729226/image.png?ex=65f9ae1e&is=65e7391e&hm=0ea00cb18d09ba52f2adbaf6a43b888c60a3ab5fe7bc867ed6a4d2e7a75bf474&)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Code](https://cdn.discordapp.com/attachments/1083115321935798314/1189259890485645452/image.png?ex=65f9cc95&is=65e75795&hm=abad129dbb121ba48af3d5d7a503866605c4d7532e2bf5d5c1bf91e2e72f828f&)
+
+![Music](https://cdn.discordapp.com/attachments/1083115321935798314/1189260073978044476/image.png?ex=65f9ccc1&is=65e757c1&hm=8efb8a90bb89838077d87b6f16185c43ac2296a95551e63f55b3a515e2562410&)
+
+![Video](https://cdn.discordapp.com/attachments/1083115321935798314/1189260280224567387/image.png?ex=65f9ccf2&is=65e757f2&hm=be1e9709049fb09faee7b3ec3403350fa4fa3702ad89c23dbd253438ce2adc06&)
+
+# Build a SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe | 2023
+
+This is a repository for Build a SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe | Full Tutorial 2023.
+
+Features:
+
+- Tailwind design
+- Tailwind animations and effects
+- Full responsiveness
+- Clerk Authentication (Email, Google, 9+ Social Logins)
+- Client form validation and handling using react-hook-form
+- Server error handling using react-toast
+- Image Generation Tool (Open AI)
+- Video Generation Tool (Replicate AI)
+- Conversation Generation Tool (Open AI)
+- Music Generation Tool (Replicate AI)
+- Page loading state
+- Stripe monthly subscription
+- Free tier with API limiting
+- How to write POST, DELETE, and GET routes in route handlers (app/api)
+- How to fetch data in server react components by directly accessing database (WITHOUT API! like Magic!)
+- How to handle relations between Server and Child components!
+- How to reuse layouts
+- Folder structure in Next 13 App Router
+
+### Prerequisites
+
+**Node version 18.x.x**
+
+### Install packages
+
+```shell
+npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Setup .env file
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```js
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-## Learn More
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
 
-To learn more about Next.js, take a look at the following resources:
+OPENAI_API_KEY=
+REPLICATE_API_TOKEN=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+DATABASE_URL=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+STRIPE_API_KEY=
+STRIPE_WEBHOOK_SECRET=
 
-## Deploy on Vercel
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Setup Prisma
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Add MySQL Database (I used PlanetScale)
+
+```shell
+npx prisma db push
+
+```
+
+### Start the app
+
+```shell
+npm run dev
+```
+
+## Available commands
+
+Running commands with npm `npm run [command]`
+
+| command         | description                              |
+| :-------------- | :--------------------------------------- |
+| `dev`           | Starts a development instance of the app |
+
+## AI
+
+![AI](https://cdn.discordapp.com/attachments/1083115321935798314/1189614238562529491/image.png?ex=65fb1698&is=65e8a198&hm=8ab0994611539263a4b2f5288d29fae456ba4dc12799a983d6070c2f7f980415&)
