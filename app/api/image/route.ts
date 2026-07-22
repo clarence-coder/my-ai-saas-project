@@ -47,10 +47,11 @@ export async function POST(
     }
 
     const response = await openai.createImage({
+      model: "dall-e-2",
       prompt,
       n: parseInt(amount, 10),
       size: resolution,
-    });
+    } as any);
 
     if (!isPro) {
       await incrementApiLimit();
