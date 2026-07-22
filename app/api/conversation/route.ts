@@ -31,7 +31,7 @@ export async function POST(
       return new NextResponse("Messages are required", { status: 400 });
     }
 
-     const freeTrial = await checkApiLimit();
+    const freeTrial = await checkApiLimit();
     const isPro = await checkSubscription();
 
     if (!freeTrial && !isPro) {

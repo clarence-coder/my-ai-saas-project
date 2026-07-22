@@ -57,8 +57,8 @@ export async function POST(
     }
 
     return NextResponse.json(response.data.data);
-  } catch (error) {
-    console.log('[IMAGE_ERROR]', error);
-    return new NextResponse("Internal Error", { status: 500 });
-  }
+  } catch (error: any) {
+  console.log('[IMAGE_ERROR]', error?.response?.data ?? error);
+  return new NextResponse("Internal Error", { status: 500 });
+}
 };
